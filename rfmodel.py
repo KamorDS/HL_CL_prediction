@@ -29,13 +29,14 @@ app_mode = st.sidebar.selectbox('Select Page', ['Home', 'Prediction'])  # two pa
 
 if app_mode == 'Home' : 
     st.header('HL and CL PREDICTION')
+    st.caption("This  app was created by Ken Foster morintoh (672020175) for mylast project at big-data-analysis")
+    
     st.image('mypic.jpg')
     st.write("Pada applikasi ini kita bisa memprediksi seberapa besar heating load (beban pemanasan)  dan beban pendingin(cooling load) berdasarkan nilai setiap kolom yang kita berikan. Metode yang digunakan")
     st.markdown('Heating load :')
     st.write(' jumlah energi panas yang dibutuhkan untuk mempertahankan suhu dalam ruangan ketika suhu luar ruangan dibawah suhu dalam ruangan.')
     st.markdown('Cooling load  : ')
     st.write('jumlah energi panas yang perlu di hilangkan untuk mempertahankan suhu dalam ruangan yang dibutuhkan ketika suhu luar ruangan lebih tinggi dari suhu dalam ruangan..')
-    st.caption("This  app was created by Ken Foster morintoh (672020175) for mylast project at big-data-analysis")
     st.markdown('---')
     st.markdown('Dataset:')
     st.write(data.head())
