@@ -41,7 +41,7 @@ if app_mode == 'Home' :
     st.header('Dataset')
     st.write(data.head())
     st.header('Histogram')
-    st.markdow('Surface Area VS Heating Load')
+    st.markdown('Surface Area VS Heating Load')
     st.bar_chart(data[['X2', 'Heating_Load']].head(20))
 
 else:
