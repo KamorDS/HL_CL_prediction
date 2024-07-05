@@ -68,12 +68,17 @@ else:
 
 # Predict Heating Load
     predictions = model.predict(input_data)
-    st.title('Prediksi Heating Load dan Cooling Load')
+    st.write('Prediksi Heating Load dan Cooling Load')
     st.write('Berikut ini adalah contoh satu data actual dan prediksinya')
-    st.markdown('Akurasi Prediksi adalah 98%')
+    st.markdown('Akurasi Prediksi adalah 98% dan R2 dan MSE tidak terlalu besar')
     st.markdown('lets say input datanya kita masukan sata data actual dan hasilnya pasti mendekati data actualnya')
     st.image('sampel1.jpg')
-   
+    st.write('Predicted Heating Load: 16.34')
+    st.write('Predicted Cooling Load: 22.30')
+    st.markdown('---')
+
+    st.header('Hasil Prediksi')
+    
     predicted_heating_load = predictions[0, 0]
     predicted_cooling_load = predictions[0, 1]
 
@@ -83,11 +88,7 @@ else:
 
     st.write(f'Predicted Heating Load: {predicted_heating_load:.2f}')
     st.write(f'Predicted Cooling Load: {predicted_cooling_load:.2f}')
-    st.write(f'Actual Heating Load: {actual_heating_load:.2f}')
-
-  
-    st.write(f'Actual Cooling Load: {actual_cooling_load:.2f}')
-
+   
     # Plot actual vs predicted values
     st.markdown('### Actual vs Predicted Heating Load')
 
