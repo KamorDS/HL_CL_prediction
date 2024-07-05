@@ -38,9 +38,10 @@ if app_mode == 'Home' :
     st.markdown('Cooling load  : ')
     st.write('jumlah energi panas yang perlu di hilangkan untuk mempertahankan suhu dalam ruangan yang dibutuhkan ketika suhu luar ruangan lebih tinggi dari suhu dalam ruangan..')
     st.markdown('---')
-    st.markdown('Dataset:')
+    st.header('Dataset')
     st.write(data.head())
-    st.markdown('Surface Area VS Heating Load')
+    st.header('Histogram')
+    st.markdow('Surface Area VS Heating Load')
     st.bar_chart(data[['X2', 'Heating_Load']].head(20))
 
 else:
