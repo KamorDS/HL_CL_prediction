@@ -68,7 +68,8 @@ else:
 
 # Predict Heating Load
     predictions = model.predict(input_data)
-    
+
+    st.title('Berikut ini adalah demo satu data untuk menunjukan akurasi dari prediksi') 
     predicted_heating_load = predictions[0, 0]
     predicted_cooling_load = predictions[0, 1]
 
