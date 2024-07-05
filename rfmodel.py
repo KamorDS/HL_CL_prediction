@@ -35,6 +35,7 @@ if app_mode == 'Home' :
     st.write(' jumlah energi panas yang dibutuhkan untuk mempertahankan suhu dalam ruangan ketika suhu luar ruangan dibawah suhu dalam ruangan.')
     st.markdown('Cooling load  : ')
     st.write('jumlah energi panas yang perlu di hilangkan untuk mempertahankan suhu dalam ruangan yang dibutuhkan ketika suhu luar ruangan lebih tinggi dari suhu dalam ruangan..')
+    st.caption("This  app was created by Ken Foster morintoh (672020175) for mylast project at big-data-analysis")
     st.markdown('---')
     st.markdown('Dataset:')
     st.write(data.head())
