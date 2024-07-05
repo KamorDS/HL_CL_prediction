@@ -72,7 +72,8 @@ else:
     st.write('Berikut ini adalah contoh satu data actual dan prediksinya')
     st.markdown('Akurasi Prediksi adalah 98%')
     st.markdown('lets say input datanya kita masukan sata data actual dan hasilnya pasti mendekati data actualnya')
-
+    st.image('sampel1.jpg')
+   
     predicted_heating_load = predictions[0, 0]
     predicted_cooling_load = predictions[0, 1]
 
